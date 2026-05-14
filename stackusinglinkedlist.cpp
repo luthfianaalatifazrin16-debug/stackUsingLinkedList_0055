@@ -39,9 +39,4 @@ public:
     // add pop fuction
     void pop()
     {
-        // add empty stack checking in pop
-        if (isEmpty())
-        {
-            cout << "Stack is empty." << endl;
         }
-    }
