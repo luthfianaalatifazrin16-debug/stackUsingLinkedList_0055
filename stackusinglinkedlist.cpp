@@ -78,9 +78,5 @@ public:
         return top == NULL;
     }
 };
-
-// create main function
-int main()
-{
-    stack stack;
-};
+}
+;
