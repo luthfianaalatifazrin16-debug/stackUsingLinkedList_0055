@@ -50,8 +50,3 @@ public:
         top = top->next;
         cout << "Popped value " << top->data << endl; // add pop output message
     }
-
-    // add peek function
-    void peek() {
-
-    };
