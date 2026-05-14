@@ -44,9 +44,4 @@ public:
         {
             cout << "Stack is empty." << endl;
         }
-
-        // add temporary node in pop
-        Node *temp = top;
-        top = top->next;
-        cout << "Popped value " << top->data << endl; // add pop output message
     }
