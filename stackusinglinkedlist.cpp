@@ -35,8 +35,3 @@ public:
         cout << "Push value: " << value << endl; // add push output message
         return value;
     }
-
-    // add pop fuction
-    void pop()
-    {
-        }
