@@ -52,14 +52,6 @@ public:
     }
 
     // add peek function
-    void peek()
-    {
-        // add empty validation in peek
-        if (top == NULL)
-        {
-            cout << "List is empty." << endl;
-        }
-        else
-        {
-        }
+    void peek() {
+
     };
