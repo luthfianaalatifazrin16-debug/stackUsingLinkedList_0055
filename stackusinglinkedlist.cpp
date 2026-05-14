@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //initial commit create Node class
 
 using namespace std;
 
@@ -14,7 +14,7 @@ public:
     }
 };
 
-// stack class
+// stack class and top pointer
 class stack
 {
 private:
@@ -25,36 +25,43 @@ public:
     {
         top = NULL;
     }
-    int push(int value)
+    int push(int value) // add push function declaration
     {
+        // implement node creation inside push
         Node *newNode = new Node();
         newNode->data = value;
-        newNode->next = top;
+        newNode->next = top; // add node connection to stack top
         top = newNode;
-        cout << "Push value: " << value << endl;
+        cout << "Push value: " << value << endl; // add push output message
         return value;
     }
 
+    // add pop fuction
     void pop()
     {
+        // add empty stack checking in pop
         if (isEmpty())
         {
             cout << "Stack is empty." << endl;
         }
 
+        // add temporary node in pop
         Node *temp = top;
         top = top->next;
-        cout << "Popped value " << top->data << endl;
+        cout << "Popped value " << top->data << endl; // add pop output message
     }
 
+    // add peek function
     void peek()
     {
+        // add empty validation in peek
         if (top == NULL)
         {
             cout << "List is empty." << endl;
         }
         else
         {
+            // add traversal for displaying stack
             Node *current = top;
             while (current != NULL)
             {
@@ -65,19 +72,23 @@ public:
         }
     }
 
+    // add isEmpty function
     bool isEmpty()
     {
         return top == NULL;
     }
 };
 
+// create main function
 int main()
 {
     stack stack;
 
+    // add menu variables
     int choice = 0;
     int value;
 
+    // add looping menu system
     while (choice != 5)
     {
 
@@ -85,9 +96,10 @@ int main()
         cout << "2.pop\n";
         cout << "3.peek\n";
         cout << "4.Exit\n";
-        cout << "5.Enter your choice: ";
+        cout << "5.Enter your choice: "; // add user input choice
         cin >> choice;
 
+        // add switch case for menu operations
         switch (choice)
         {
         case 1:
@@ -117,8 +129,7 @@ int main()
                 cout << "Stack is empty. No top value. " << endl;
             }
             break;
-
-        case 4:
+            // finalize exit and invalid c
             cout << "Exiting program." << endl;
             break;
         default:
