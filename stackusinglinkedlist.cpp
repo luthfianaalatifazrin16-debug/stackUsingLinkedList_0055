@@ -98,35 +98,4 @@ int main()
         cout << "4.Exit\n";
         cout << "5.Enter your choice: "; // add user input choice
         cin >> choice;
-
-        // add switch case for menu operations
-        switch (choice)
-        {
-        case 1:
-            cout << "Enter the value to push: ";
-            cin >> value;
-            stack.push(value);
-            break;
-
-        case 2:
-            if (!stack.isEmpty())
-            {
-                stack.pop();
-            }
-            else
-            {
-                cout << "Stack is empty. Cannot pop. " << endl;
-            }
-            break;
-
-        case 3:
-            if (!stack.isEmpty())
-            {
-                stack.peek();
-            }
-            else
-            {
-                cout << "Stack is empty. No top value. " << endl;
-            }
-            break;
-        };
+    };
