@@ -83,8 +83,4 @@ public:
 int main()
 {
     stack stack;
-
-    // add menu variables
-    int choice = 0;
-    int value;
 };
