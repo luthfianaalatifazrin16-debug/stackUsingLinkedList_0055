@@ -87,15 +87,4 @@ int main()
     // add menu variables
     int choice = 0;
     int value;
-
-    // add looping menu system
-    while (choice != 5)
-    {
-
-        cout << "1.push\n";
-        cout << "2.pop\n";
-        cout << "3.peek\n";
-        cout << "4.Exit\n";
-        cout << "5.Enter your choice: "; // add user input choice
-        cin >> choice;
-    };
+};
