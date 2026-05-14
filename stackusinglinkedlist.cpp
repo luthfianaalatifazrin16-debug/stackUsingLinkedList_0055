@@ -30,6 +30,3 @@ public:
         // implement node creation inside push
         Node *newNode = new Node();
         newNode->data = value;
-        newNode->next = top; // add node connection to stack top
-        top = newNode;
-        }
