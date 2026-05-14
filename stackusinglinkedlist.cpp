@@ -129,14 +129,4 @@ int main()
                 cout << "Stack is empty. No top value. " << endl;
             }
             break;
-            // finalize exit and invalid c
-            cout << "Exiting program." << endl;
-            break;
-        default:
-            cout << "invalid choice. Try again." << endl;
-            break;
-        }
-        cout << endl;
-    }
-    return 0;
-};
+        };
