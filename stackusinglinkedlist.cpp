@@ -13,15 +13,3 @@ public:
         next = NULL;
     }
 };
-
-// stack class and top pointer
-class stack
-{
-private:
-    Node *top;
-
-public:
-    stack()
-    {
-        top = NULL;
-    }
