@@ -71,12 +71,4 @@ public:
             cout << endl;
         }
     }
-
-    // add isEmpty function
-    bool isEmpty()
-    {
-        return top == NULL;
-    }
 };
-}
-;
